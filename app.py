@@ -3,7 +3,7 @@ from langchain.chat_models import ChatOpenAI, openai
 import gradio as gr
 import sys
 import os
-os.chdir('C:/Users/TUSHAR/Downloads')
+os.chdir('C:/Users/Downloads')
 from tenacity import (
     retry,
     stop_after_attempt,
@@ -16,7 +16,7 @@ def completion_with_backoff(**kwargs):
     return openai.Completion.create(**kwargs)
 
 
-os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = 'Your API Key'
 
 def construct_index(directory_path):
     max_input_size = 4096
